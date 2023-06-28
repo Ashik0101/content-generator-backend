@@ -37,7 +37,6 @@ app.post("/generate/poem", async (req, res) => {
 
     // Extract the generated poem from the API response
     const content = response.data.choices[0].message.content;
-    console.log(content);
     res.json({ content });
   } catch (error) {
     console.error("Error:", error.response.data);
@@ -76,7 +75,6 @@ app.post("/generate/joke", async (req, res) => {
 
     // Extract the generated joke from the API response
     const content = response.data.choices[0].message.content;
-    console.log(content);
     res.json({ content });
   } catch (error) {
     console.error("Error:", error.response.data);
@@ -115,7 +113,6 @@ app.post("/generate/quote", async (req, res) => {
 
     // Extract the generated quote from the API response
     const content = response.data.choices[0].message.content;
-    console.log(content);
     res.json({ content });
   } catch (error) {
     console.error("Error:", error.response.data);
@@ -154,7 +151,6 @@ app.post("/generate/story", async (req, res) => {
 
     // Extract the generated story from the API response
     const content = response.data.choices[0].message.content;
-    console.log(content);
     res.json({ content });
   } catch (error) {
     console.error("Error:", error.response.data);
